@@ -1,0 +1,19 @@
+{
+  "name": "alarm-bot-for-incruit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bent": "7.3.12",
+    "cheerio": "1.0.0-rc.5",
+    "express": "4.17.1",
+    "node-schedule": "1.3.2",
+    "node-telegram-bot-api": "0.51.0",
+    "slack-node": "0.1.8"
+  }
+}
