@@ -2,7 +2,7 @@ const cheerio = require("cheerio");
 const Slack = require("slack-node");
 const { scheduleJob } = require("node-schedule");
 
-const constants = require("./constants");
+const constants = require("./constants.json");
 const saramin = require("./saramin");
 
 ;(async function (){
