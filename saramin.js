@@ -18,7 +18,6 @@ async function get (){
             }
         } catch(err){}
     }
-    console.log(saramin_list)
     return saramin_list;
 }
 
