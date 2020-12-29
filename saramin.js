@@ -1,12 +1,11 @@
-async function get (){
+async function get (title_list){
     const cheerio = require("cheerio");
     const bent = require("bent");
     const getString = bent("string");
-    const constants = require("./constants");
 
     let saramin_list = [];//{title : "", href : ""}
     
-    for(title of constants.titles){
+    for(title of title_list){
         let res = await getString(`http://www.saramin.co.kr/zf_user/search?search_area=main&search_done=y&search_optional_item=n&searchType=search&searchword=${encodeURIComponent(title)}&loc_cd=108080`);
         let $ = cheerio.load(res);
         try{
@@ -21,4 +20,4 @@ async function get (){
     return saramin_list;
 }
 
-module.exports = get;
+module.exports.saramin = get;

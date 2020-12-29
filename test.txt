@@ -1,0 +1,5 @@
+
+> alarm-bot-for-incruit@1.0.0 start /Users/juhojung/code_bucket/alarm-bot-for-incruit
+> node app.js
+
+[Object: null prototype] { class: 'topics' }
